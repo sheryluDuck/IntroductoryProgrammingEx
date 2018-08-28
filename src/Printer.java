@@ -20,6 +20,9 @@ public class Printer {
         quackExample.readNumberPrintDiamond();
         //Seventh Exercise
         quackExample.readNumberPrintDiamondWithName();
+        //Eighth Exercise
+        quackExample.readNumberPrintFizzBuzz();
+
 
     }
 }

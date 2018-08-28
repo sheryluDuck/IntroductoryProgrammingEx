@@ -180,4 +180,28 @@ public class IntroductoryExample {
             System.err.println(e.getMessage());
         }
     }
+
+    private void fizzBuzz(int inputNumber){
+        for (int i = 0; i < inputNumber; i++) {
+            if(i%3==0){
+                if(i%5==0){
+                    System.out.println("FizzBuzz");
+                }else{
+                    System.out.println("Fizz");
+                }
+            }else{
+                System.out.println(i);
+            }
+        }
+    }
+    public void readNumberPrintFizzBuzz(){
+        try{
+            System.out.println(" ");
+            System.out.println("This is a FizzBuzz");
+            int inputNumber = tool.readNumber();
+            fizzBuzz(inputNumber);
+        } catch (InputMismatchException e) {
+            System.err.println(e.getMessage());
+        }
+    }
 }
