@@ -15,7 +15,8 @@ public class Printer {
         quackExample.readNumberPrintAsteriskLine();
         //Third Exercise
         quackExample.readNumberPrintAsteriskVertical();
-
+        //Fourth Exercise
+        quackExample.readNumberPrintRightTriangle();
     }
 
 

@@ -39,5 +39,21 @@ public class IntroductoryExample {
             System.err.println(e.getMessage());
         }
     }
+    private void printRightTriangle(int inputNumber){
+        for (int i = 0; i < inputNumber; i++) {
+            printAsteriskLine(i+1);
+            System.out.println(" ");
+        }
+    }
+
+    public void readNumberPrintRightTriangle(){
+        try{
+            System.out.println(" ");
+            int inputNumber = tool.readNumber();
+            printRightTriangle(inputNumber);
+        } catch (InputMismatchException e) {
+            System.err.println(e.getMessage());
+        }
+    }
 
 }
