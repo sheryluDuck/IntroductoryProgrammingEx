@@ -11,7 +11,9 @@ public class Printer {
         //First Exercise
         quackExample.printAsterisk();
         //Second Exercise
-        herramienta.readNumber();
+        int inputNumber = herramienta.readNumber();
+        quackExample.printAsteriskLine(inputNumber);
+
 
 
     }
