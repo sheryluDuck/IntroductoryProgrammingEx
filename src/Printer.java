@@ -4,7 +4,6 @@ import com.utils.Utilities;
 public class Printer {
 
     public static void main(String[] args) {
-        Utilities herramienta = new Utilities();
         IntroductoryExample quackExample = new IntroductoryExample();
 
         //First Exercise
@@ -17,6 +16,8 @@ public class Printer {
         quackExample.readNumberPrintRightTriangle();
         //Fifth Exercise
         quackExample.readNumberPrintIsoscelesTriangle();
+        //Sixth Exercise
+        quackExample.readNumberPrintDiamond();
 
     }
 }
