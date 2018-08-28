@@ -82,6 +82,17 @@ public class IntroductoryExample {
             printAsteriskLine(asteriskNumber);
         }
     }
+    private void printTriangleLineOrName(int blankSpaces, int asteriskNumber){
+        if (blankSpaces!=0) {
+            printBlankLine(blankSpaces);
+            printAsteriskLine(asteriskNumber);
+            printBlankLine(blankSpaces);
+            System.out.println(" ");
+        }else {
+            //Add a reader for the name :)
+            System.out.print("Fernanda");
+        }
+    }
     private void printIsoscelesTriangle(int inputNumber){
         int triangleLength = getTriangleLength(inputNumber);
         int totalBlankSpaces=1;
@@ -96,6 +107,23 @@ public class IntroductoryExample {
                 totalBlankSpaces=triangleLength-totalBlankSpaces;
                 int blankSpaces = totalBlankSpaces/2;
                 printTriangleLine(blankSpaces, totalAsteriskNumber);
+            }
+        }
+    }
+    private void printIsoscelesTriangleWithName(int inputNumber){
+        int triangleLength = getTriangleLength(inputNumber);
+        int totalBlankSpaces=1;
+        int totalAsteriskNumber=1;
+        for (int i = 0; i < inputNumber; i++) {
+            if(i!=0){
+                totalAsteriskNumber=totalAsteriskNumber+2;
+                totalBlankSpaces=triangleLength-totalAsteriskNumber;
+                int blankSpaces = totalBlankSpaces/2;
+                printTriangleLineOrName(blankSpaces, totalAsteriskNumber);
+            }else{
+                totalBlankSpaces=triangleLength-totalBlankSpaces;
+                int blankSpaces = totalBlankSpaces/2;
+                printTriangleLineOrName(blankSpaces, totalAsteriskNumber);
             }
         }
     }
@@ -133,6 +161,19 @@ public class IntroductoryExample {
             System.out.println("Let's print a Diamond");
             int inputNumber = tool.readNumber();
             printIsoscelesTriangle(inputNumber);
+            System.out.print("\n");
+            printInvertedIsoscelesTriangle(inputNumber);
+        } catch (InputMismatchException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    public void readNumberPrintDiamondWithName(){
+        try{
+            System.out.println(" ");
+            System.out.println("Let's print an diamond with a name");
+            int inputNumber = tool.readNumber();
+            printIsoscelesTriangleWithName(inputNumber);
             System.out.print("\n");
             printInvertedIsoscelesTriangle(inputNumber);
         } catch (InputMismatchException e) {

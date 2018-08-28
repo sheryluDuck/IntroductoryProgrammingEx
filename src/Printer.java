@@ -18,6 +18,8 @@ public class Printer {
         quackExample.readNumberPrintIsoscelesTriangle();
         //Sixth Exercise
         quackExample.readNumberPrintDiamond();
+        //Seventh Exercise
+        quackExample.readNumberPrintDiamondWithName();
 
     }
 }
