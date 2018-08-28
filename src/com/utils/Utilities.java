@@ -4,13 +4,14 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Utilities {
+
+    static final Scanner scanIn = new Scanner(System.in);
+
     public static int readNumber()
     {
         System.out.println("Please enter a number: ");
-
-        Scanner scanIn = new Scanner(System.in);
         String inputString = scanIn.nextLine();
-        scanIn.close();
+        //scanIn.close();
         return castNumberFromConsole(inputString);
     }
     private static int castNumberFromConsole(String rawNumber){

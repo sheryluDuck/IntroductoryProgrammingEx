@@ -1,6 +1,7 @@
 import com.operations.IntroductoryExample;
 import com.utils.Utilities;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Printer {
@@ -11,10 +12,9 @@ public class Printer {
         //First Exercise
         quackExample.printAsterisk();
         //Second Exercise
-        int inputNumber = herramienta.readNumber();
-        quackExample.printAsteriskLine(inputNumber);
-
-
+        quackExample.readNumberPrintAsteriskLine();
+        //Third Exercise
+        quackExample.readNumberPrintAsteriskVertical();
 
     }
 
