@@ -204,4 +204,31 @@ public class IntroductoryExample {
             System.err.println(e.getMessage());
         }
     }
+
+    private void getPrimeFactors(int inputNumber){
+        int prime2= 2;
+        while (inputNumber%prime2==0){
+            System.out.println(prime2);
+            inputNumber= inputNumber/prime2;
+        }
+        for (int i = 3; i < Math.sqrt(inputNumber); i=i+2) {
+            while (inputNumber%i==0){
+                System.out.println(i);
+                inputNumber= inputNumber/i;
+            }
+        }
+        if(inputNumber>2){
+            System.out.println(inputNumber);
+        }
+    }
+    public void readNumberPrintPrimeFactors(){
+        try{
+            System.out.println(" ");
+            System.out.println("Prime Factors");
+            int inputNumber = tool.readNumber();
+            getPrimeFactors(inputNumber);
+        } catch (InputMismatchException e) {
+            System.err.println(e.getMessage());
+        }
+    }
 }

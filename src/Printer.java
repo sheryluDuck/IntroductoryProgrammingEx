@@ -22,6 +22,8 @@ public class Printer {
         quackExample.readNumberPrintDiamondWithName();
         //Eighth Exercise
         quackExample.readNumberPrintFizzBuzz();
+        //Ninth Exercise
+        quackExample.readNumberPrintPrimeFactors();
 
 
     }
