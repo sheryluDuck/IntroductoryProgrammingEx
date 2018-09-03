@@ -189,7 +189,10 @@ public class IntroductoryExample {
                 }else{
                     System.out.println("Fizz");
                 }
-            }else{
+            }else if(i%5==0){
+                System.out.println("Buzz");
+            }
+            else{
                 System.out.println(i);
             }
         }

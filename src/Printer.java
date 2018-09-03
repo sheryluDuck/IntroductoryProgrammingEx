@@ -1,6 +1,4 @@
 import com.operations.IntroductoryExample;
-import com.utils.Utilities;
-
 public class Printer {
 
     public static void main(String[] args) {
